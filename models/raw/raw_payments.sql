@@ -1,0 +1,1 @@
+select * from {{source("Snowflake sources","raw_payments")}}

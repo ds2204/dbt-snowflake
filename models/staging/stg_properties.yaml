@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: "Snowflake sources"
+    description: "Simple goal to store transformed data in another database"
+    database: E_COMM
+    schema: RAW
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments
