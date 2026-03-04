@@ -1,0 +1,16 @@
+sources:
+  - name: First Ecomm Pipeline
+    description: "This is made to calculate sales"
+    database: E_COMM
+    schema: E_COMM_SCH
+    tables:
+      - name: DIM_CUSTOMER
+        description: Table for Customers detais/n 1 row for 1 customer. 
+      - name: DIM_PRODUCT
+      - name: FACT_ORDER_2023
+      - name: FACT_ORDER_2024
+        columns:
+          - name: ORDER_ID
+            tests:
+              - not_null
+              - unique
